@@ -67,6 +67,10 @@
     }
   };
 
+  Headspace.isSupported = function () {
+    return !!(typeof window !== 'undefined' && window.requestAnimationFrame && 'classList' in document.documentElement);
+  };
+
   function optionOrDefault(opt, def) {
     return typeof opt !== 'undefined' ? opt : def;
   }

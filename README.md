@@ -12,7 +12,7 @@ Next generation web header UX.  This is similar to headroom.js, but different in
 Sites like [medium.com](http://medium.com), [romper.com](http://romper.com), [teehan + lax](http://www.teehanlax.com/) deploy a similar technique
 
 ## Demo
-`demo.html` TODO: link
+[demo.html](https://rawgit.com/gdub22/headspace/master/demo.html)
 
 ## Install
 ```shell
@@ -42,7 +42,11 @@ Headspace(document.querySelector('header'), { // can use factory method instead 
 To get started quickly with the minimal amount of css, copy contents of `dist/headspace.css` to your project.  
 
 ## Browser support
-Out of the box: Browsers that natively support [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) (Chrome, Safari, Firefox, IE 10+).  You can globally pollyfill them if needed, otherwise the code is structured so you can shim in support.
+Out of the box: Chrome 24+, Firefox 23+, Safari 7+, IE 10+  
+Read: browsers that natively support [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) 
+
+You can globally pollyfill them if needed, otherwise the code is structured so you can manually shim-in support.  
+`Headroom.isSupported()` will check if it can be used out of the box on the current browser/environment
 
 ## Build
 ```shell

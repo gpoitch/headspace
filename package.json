@@ -1,7 +1,7 @@
 {
   "name": "headspace",
-  "version": "0.1.0",
-  "description": "next gen header ux",
+  "version": "0.1.1",
+  "description": "Next generation web header UX",
   "author": "Garth Poitras <garth22@gmail.com>",
   "license": "MIT",
   "main": "dist/headspace.js",

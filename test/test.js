@@ -10,6 +10,10 @@ describe('Server-side', () => {
   it('doesn\'t throw when instantiated', () => {
     assert.doesNotThrow(Headspace)
   })
+
+  it('returns false for `isSupported()`', () => {
+    assert.strictEqual(Headspace.isSupported(), false)
+  })
 })
 
 describe('Creation', () => {
