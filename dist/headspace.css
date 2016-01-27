@@ -1,0 +1,32 @@
+/**
+ * Headspace starter styles
+ */
+.headspace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s;
+  height: 4rem;
+}
+.headspace--hidden {
+  transform: translate3d(0, -4rem, 0); /* y value should be -1 * height */
+}
+.headspace--fixed {
+  position: fixed;
+}
+
+/**
+ * Optional feature: show header when hovering near top
+ */
+.headspace--hidden:after {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 4rem;
+  height: 4rem;
+}
+.headspace--hidden:hover {
+  transform: translate3d(0, 0, 0);
+}
