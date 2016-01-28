@@ -3,3 +3,4 @@ node_js:
   - stable
 notifications:
   email: false
+script: npm run build
