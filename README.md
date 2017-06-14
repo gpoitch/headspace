@@ -3,7 +3,7 @@
 Next generation web header UX.  This is similar to headroom.js, but different in areas I believed could be improved:
 
 - Header initially scrolls naturally out of view as if it is static
-- Header reappears fixed when scrolling up, hides when scrolling back down (if greater that scroll tolerance)
+- Header reappears fixed when scrolling up, hides when scrolling back down (if greater than scroll tolerance)
 - Header can reappear when reaching bottom of the document
 - Header can reappear if hovering near the top
 - Interaction/tolerance should match closely to mobile safari's chrome
@@ -45,7 +45,7 @@ To get started quickly with the minimal amount of css, copy contents of `dist/he
 Out of the box: Chrome 24+, Firefox 23+, Safari 7+, IE 10+  
 Read: browsers that natively support [classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) 
 
-You can globally pollyfill them if needed, otherwise the code is structured so you can manually shim-in support.  
+You can globally polyfill them if needed, otherwise the code is structured so you can manually shim-in support.  
 `Headroom.isSupported()` will check if it can be used out of the box on the current browser/environment
 
 ## Build
