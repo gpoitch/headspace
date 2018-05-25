@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - stable
+  - node
 notifications:
   email: false
-script: npm run build
+script: npm run build && npm test
